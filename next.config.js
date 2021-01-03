@@ -1,13 +1,15 @@
 
 module.exports = {
-  webpack: (config, { isServer }) => {
+  webpack: (config) => {
     config.resolve.extensions = ['.ts', '.js', '.jsx', '.tsx', '.svg', '.scss'];
     return config;
   }
 }
 
 
-module.exports.env = {
+const { HASURA_DB_URL, HASURA_DB_SECRET} = process.env
 
-  BUTTONDOWN_API_KEY: process.env.BUTTONDOWN_API_KEY,
+module.exports.env = {
+  HASURA_DB_URL,
+  HASURA_DB_SECRET,
 };
