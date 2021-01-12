@@ -1,15 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 
-/*
-This is an example snippet - you should consider tailoring it
-to your service.
-*/
-/*
-Add these to your `package.json`:
-  "node-fetch": "^2.5.0"
-*/
-// Node doesn't implement fetch so we have to import it
-import fetch, { Response } from "node-fetch";
 
 async function fetchGraphQL(operationsDoc, operationName, variables): Promise<{ data: Response, errors?: Error }> {
     const result = await fetch(

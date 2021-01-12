@@ -3671,15 +3671,10 @@ neo-async@^2.5.0, neo-async@^2.6.1, neo-async@^2.6.2:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
-next-google-fonts@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/next-google-fonts/-/next-google-fonts-1.2.1.tgz#0b517cff3f34b8f7836f81eb9427973c8b4ac03e"
-  integrity sha512-BhVSldP1oZBTwXeJdMtjmu2qbDT1EkbQO2rG83Oj6APYm6aUsIcMu00Pzkzd8TTkrQW9HyC08Pzr10PY4pE6jA==
-
-next-styled-system@^2.0.3:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/next-styled-system/-/next-styled-system-2.0.3.tgz#5c870e4057cb185c3c2e9122c8d5aa7060b3ed82"
-  integrity sha512-ZUVK+kp+mHffYAM3uGdNBibwG1JYs9Jyj9BpWy0jbgqgqe3ZJGI6/tTD9DdAZ6ySf83/SqY2PW6tHx6EGSQf7w==
+next-styled-system@^2.0.15:
+  version "2.0.15"
+  resolved "https://registry.yarnpkg.com/next-styled-system/-/next-styled-system-2.0.15.tgz#04c256c3ce3a1fb93514ba87c68154058be7d639"
+  integrity sha512-yqYr3go2wJK+9PIaoHTt/A8PYhfcl0kpFXNt7T34a6vHyeY+PomEwh9KUkOzLnbj1HxNFDar/7pefZAd5Y/BdQ==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.12.1"
     "@babel/plugin-proposal-object-rest-spread" "^7.12.1"

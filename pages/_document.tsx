@@ -7,7 +7,16 @@ class MyDocument extends Document {
     const styles = [...flushToReact()]
     return (
       <Html lang="en">
-        <Head>{styles}</Head>
+        <Head>
+          {styles}
+          <link
+            rel="preload"
+            href="/fonts/inter-var-latin.woff2"
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
+          />
+        </Head>
         <body>
           <Main />
           <NextScript />
