@@ -16,10 +16,10 @@ export const Index: FC<IndexProps> = ({}) => {
                py={10}
                borderRadius={1}
                boxShadow="0 2px 6px rgba(0,0,0,0.2)"
-               fz={15}
+               fz={14}
                color="rgba(0,0,0,0.9)"
                weight={300}
-               lineHeight={1.6}> {/* Card */}
+               lineHeight={1.6}>
             <Div h={43} px={1} borderBottom="1px solid rgba(0,0,0,0.2)" d="flex" align="center">
               <Span className={cn({ active })}
                     onClick={() => { setActive(!active); }}
@@ -34,16 +34,17 @@ export const Index: FC<IndexProps> = ({}) => {
                     fz={10}
                     transition="0.2s ease"
                     _firstChild={{transform: active ? `scale(1)` : `scale(0.2)`, transition: `0.1s ease`}}
-                    _activeClass={{ bgc: `#2560bd`, border: `1px solid #165abc`, color: `rgba(255, 255, 255, 1)`, transform: `scale(1.1)` }}>
+                    _activeClass={{ bgc: "#2560bd", border: `1px solid #165abc`, color: `rgba(255, 255, 255, 1)`, transform: `scale(1.1)` }}>
                 <FaCheck />
               </Span>
               <Input className="title"
                      defaultValue="Web App Development"
                      placeholder="New Item"
+                     w="100%"
                      px={3}
                      _hf={{ outline: `none` }}
                      color="rgba(0,0,0,0.9)"
-                     fz={15}
+                     fz={14}
                      fontFamily="Inter"
                      weight={300} />
             </Div>

@@ -3671,10 +3671,10 @@ neo-async@^2.5.0, neo-async@^2.6.1, neo-async@^2.6.2:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
-next-styled-system@^2.0.15:
-  version "2.0.15"
-  resolved "https://registry.yarnpkg.com/next-styled-system/-/next-styled-system-2.0.15.tgz#04c256c3ce3a1fb93514ba87c68154058be7d639"
-  integrity sha512-yqYr3go2wJK+9PIaoHTt/A8PYhfcl0kpFXNt7T34a6vHyeY+PomEwh9KUkOzLnbj1HxNFDar/7pefZAd5Y/BdQ==
+next-styled-system@^3.0.4:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/next-styled-system/-/next-styled-system-3.0.4.tgz#d7017dd63f2529f4e29a22ef4fe56da91b42e0c5"
+  integrity sha512-pQv4Fp1kKXUi4WR0HWFKqqGCNaK1YbVvjXa4ImJtv7NCsYgaBzmTz23mWqAXw8Homjhv2xwof9UBQ3qiRix6Xg==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.12.1"
     "@babel/plugin-proposal-object-rest-spread" "^7.12.1"

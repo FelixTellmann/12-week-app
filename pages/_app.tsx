@@ -1,4 +1,4 @@
-import { NamedElement } from "next-styled-system";
+import { Element } from "next-styled-system";
 import { AppProps } from "next/app";
 import Head from "next/head";
 import Image from "next/image";
@@ -14,7 +14,7 @@ const NavData = [
   { title: `Habits`, href: `/#` }
 ];
 
-const NavLinkElement = NamedElement("a", "nav-link", {
+const NavLinkElement = Element("a",  {
   textTransform: "uppercase",
   fz: 14,
   weight: 500,
@@ -41,7 +41,6 @@ export const Root: FC<AppProps> = ({ pageProps, Component }) => {
     <>
       <>
         <Head>
-          
           <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         </Head>
       </>
@@ -52,7 +51,7 @@ export const Root: FC<AppProps> = ({ pageProps, Component }) => {
             {
               NavData.map(({ title, href }) => (
                 <Link key={title} href={href} passHref>
-                  <NavLinkElement onClick={(e) => { e.preventDefault(); }}>{title}</NavLinkElement>
+                  <NavLinkElement  useClass="nav-link"  p={2}  onClick={(e) => { e.preventDefault(); }}>{title}</NavLinkElement>
                 </Link>
               ))
             }
