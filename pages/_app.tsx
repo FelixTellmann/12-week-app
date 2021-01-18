@@ -51,7 +51,7 @@ export const Root: FC<AppProps> = ({ pageProps, Component }) => {
             {
               NavData.map(({ title, href }) => (
                 <Link key={title} href={href} passHref>
-                  <NavLinkElement  useClass="nav-link"  p={2}  onClick={(e) => { e.preventDefault(); }}>{title}</NavLinkElement>
+                  <NavLinkElement useClass="nav-link"   p={2}  onClick={(e) => { e.preventDefault(); }}>{title}</NavLinkElement>
                 </Link>
               ))
             }
