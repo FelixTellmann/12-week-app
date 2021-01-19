@@ -21,8 +21,8 @@ export const Index: FC<IndexProps> = ({}) => {
       {
         week: 3,
         status: "active",
-        goal1: 0.5,
-        goal2: 0.4
+        goal1: 0.95,
+        goal2: 0.9
       },
       {
         week: 4,
