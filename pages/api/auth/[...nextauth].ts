@@ -13,7 +13,7 @@ const handler: NextApiHandler = (req, res) => NextAuth(req, res, {
   ],
 
   // A database is optional, but required to persist accounts in a database
-  database: process.env.MYSQL_HOST,
+  database: process.env.DATABASE_URL,
 })
 
 export default handler;
