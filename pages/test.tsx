@@ -4,11 +4,19 @@ import { signIn, signOut, useSession } from 'next-auth/client'
 export default function Page() {
   const [ session, loading ] = useSession()
 
+  if (loading) {
+      return <>
+          nothign!
+      </>
+  }
+  if (session) {
+      console.log(session)
+  }
   return <>
     {!session && <>
       
       Not signed in <br/>
-      <button type="button" onClick={signIn}>Sign in</button>
+      <button type="button" onClick={()=> signIn('github')}>Sign in</button>
     </>}
     {session && <>
       
