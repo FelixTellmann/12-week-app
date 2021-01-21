@@ -6,10 +6,12 @@ export default function Page() {
 
   return <>
     {!session && <>
+      
       Not signed in <br/>
       <button type="button" onClick={signIn}>Sign in</button>
     </>}
     {session && <>
+      
       Signed in as {session.user.email} <br/>
       <button type="button" onClick={signOut}>Sign out</button>
     </>}
