@@ -9,11 +9,11 @@ export const db = mysql({
   }
 });
 
-export async function query(q: string, values: (string | number)[] | string | number = []): Promise<unknown> {
+export async function query(q: string, values: (string | number)[] | string | number = []): Promise<any> {
   try {
     const results = await db.query(q, values);
     await db.end();
-    return results;
+    return JSON.parse(JSON.stringify(results));
   } catch (e) {
     throw Error(e.message);
   }

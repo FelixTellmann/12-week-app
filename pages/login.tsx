@@ -16,6 +16,7 @@ export const Page: FC = () => {
     {!session && <>
 
       Not signed in <br />
+      <button type="button" onClick={signIn}>Sign in an any</button>
       <button type="button" onClick={() => signIn("github")}>Sign in with Github</button>
       <button type="button" onClick={() => signIn("facebook")}>Sign in with Facebook</button>
       <button type="button" onClick={() => signIn("google")}>Sign in with Google</button>
@@ -24,6 +25,7 @@ export const Page: FC = () => {
     {session && <>
 
       Signed in as {session.user.email} <br />
+      <button type="button" onClick={signIn}>Sign in an any</button>
       <button type="button" onClick={() => signIn("github")}>Sign in with Github</button>
       <button type="button" onClick={() => signIn("facebook")}>Sign in with Facebook</button>
       <button type="button" onClick={() => signIn("google")}>Sign in with Google</button>
