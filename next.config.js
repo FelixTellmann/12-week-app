@@ -6,7 +6,6 @@ module.exports = {
 };
 
 const {
-  NEXTAUTH_URL,
   MYSQL_HOST,
   MYSQL_DATABASE,
   MYSQL_USERNAME,
@@ -28,7 +27,7 @@ module.exports.env = {
   GITHUB_ID,
   GITHUB_SECRET,
   DATABASE_URL,
-  NEXTAUTH_URL,
+  NEXTAUTH_URL: process.env.NODE_ENV === 'production' ? "https://12-week-app.vercel.app" : "http://localhost:3000",
   GOOGLE_CLIENT_ID,
   GOOGLE_CLIENT_SECRET,
   TWITTER_CLIENT_ID,
