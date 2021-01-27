@@ -10,3 +10,4 @@ node_modules
 **/public/service-worker.js*
 # Project exclude paths
 /dist/
+.vercel
